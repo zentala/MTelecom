@@ -1,0 +1,70 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="M-Telecom">
+  <main class="max-w-[1300px] text-black text-lg leading-loose">
+    <div class="grid grid-cols-1 md:grid-cols-8">
+      <div class="col-span-2 min-h-screen bg-white p-8 border-r-2 border-stone-100">
+        <h1 class="text-xl leading-none text-center mb-4">
+          <img src="/logo.svg" alt="M-Telecom Logo" class="block mx-auto mb-4 w-48" />
+          Serwis elektroniczny<br />
+          <div class="mt-2">w Radzyniu Podlaskim</div>
+        </h1>
+
+        <div class="text-md">
+          <p class="text mt-12 my-2">
+            <span class="text-stone-400 text-base">Adress:</span><br />
+            ul. Słowackiego 62, <br />
+            21-300 Radzyń Podlaski
+          </p>
+          <a
+            href="https://maps.app.goo.gl/9VM58AszVWjFKxdT6"
+            target="_blank"
+            class="btn btn-neutral btn-sm bg-stone-100 border-stone-200 hover:bg-stone-200 hover:border-stone-300"
+            >Otwórz w Google Maps</a
+          >
+          <p class="my-4">
+            <span class="text-stone-400 text-base">Telefon:</span><br />
+            <a href="tel:+48690239303">+48 690 239 303</a>
+          </p>
+          <p class="my-4">
+            <span class="text-stone-400 text-base">E-mail:</span><br />
+            <a href="mailto:m-telecom@wp.pl">m-telecom@wp.pl</a>
+          </p>
+        </div>
+        <a
+          href="https://www.facebook.com/Mtelecomradzyn"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gray-300 hover:text-blue-500 text-3xl"
+          ><i class="fa-brands fa-facebook"></i></a
+        >
+      </div>
+
+      <div class="col-span-6 p-8">
+        <p class="mb-8 border border-stone-150 bg-stone-100 p-8 py-6 rounded-lg">
+          <span class="text-red-500">M-Telecom</span> to szybkie i niezawodne naprawy wszystkich urządzeń
+          elektronicznych: od smartfonów, tablety, przez laptopy aż po inne elektroniczne urządzenia
+          RTV/AGD. Zapraszamy!
+        </p>
+        <ul role="list" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <Card title="Naprawa telefonów i laptopów" body="Miałem w ręku każdą markę telefonu." />
+          <Card
+            title="Naprawa elektroniki"
+            body="Pady do gier, telewizory, szczoteczki elektryczne, maszynki do golenia, etc."
+          />
+          <Card
+            title="Odzyskiwanie danych"
+            body="...z telefonów, komputerów, dysków twardych HDD i SSD oraz kart pamięci."
+          />
+          <Card
+            title="Akcesoria do telefonów"
+            body="Ładowarki, przejściówki, uchwyty do samochodów, szkła zabezpieczające, pokrowce."
+          />
+        </ul>
+      </div>
+    </div>
+  </main>
+</Layout>

@@ -1,0 +1,19 @@
+---
+interface Props {
+  title: string;
+  body: string;
+}
+
+const { title, body } = Astro.props;
+---
+
+<li
+  class="list-none py-4 px-6 border border-neutral-300 bg-neutral-200 rounded-md transition-all shadow w-full opacity-80 hover:opacity-100"
+>
+  <h2 class="m-0 text-2xl">
+    {title}
+  </h2>
+  <p class="mt-2 mb-0 text-stone-900">
+    {body}
+  </p>
+</li>
