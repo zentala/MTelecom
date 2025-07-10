@@ -1,6 +1,8 @@
 # MTelecom
 
-MTelecom is a website for a local phone and electronics repair workshop. Built with Astro, Tailwind CSS, DaisyUI, and SCSS, it provides a modern and responsive design. The project is configured to deploy to GitHub Pages and uses autoformatting for consistent code style.
+MTelecom is a simple, one-page, responsive website for a local phone and electronics repair workshop. 
+
+![MTelecom](./mtelecom.png)
 
 ## Technologies Used
 
