@@ -7,6 +7,9 @@ on:
       - "**.md"
       - "docs/**"
       - ".plan/**"
+      - "README*"
+      - "LICENSE"
+      - "CHANGELOG*"
   workflow_dispatch:
 
 # Allow this job to clone the repo and create a page deployment
@@ -22,6 +25,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
@@ -42,6 +46,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
